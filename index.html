@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <div id="big-container" class="container flex">
+        <div id="sidebar" class="bg-blue-400 h-screen w-48 p-8 font-bold text-white text-center text-xl">
+            My Library
+        </div>
+        <div id="content">
+            <div id="books-container" class="grid grid-cols-3 gap-8 p-8 col-span-3">
+            </div>
+            <div class="btn-container flex justify-center">
+                <button id="new-book-btn" class="bg-blue-400 text-white rounded-2xl h-8 w-32 text-sm">
+                    NEW BOOK
+                </button>
+            </div>
+            <dialog id="form-dialog">
+                <form action="" id="book-form" method="dialog" class="w-80 p-12">
+                    <div style="text-align: center; margin-bottom: 2rem;">BOOK INFO</div>
+                    <label for="title">Title</label>
+                    <br>
+                    <input type="text" id="title" name="title"
+                        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5"
+                        required><br><br>
+                    <label for="author">Author</label>
+                    <br>
+                    <input type="text" id="author" name="author"
+                        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5"
+                        required><br><br>
+                    <label for="page">Page</label>
+                    <br>
+                    <input type="text" id="page" name="page"
+                        class="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-full p-2.5"
+                        required><br><br>
+                    <label for="read">Read</label>
+                    <input type="checkbox" name="read" id="read"><br><br>
+                    <div class="flex justify-between">
+                        <button type="submit"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+                            Submit</button>
+                        <button type="button" id="cancelBtn"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+                            Cancel</button>
+                    </div>
+                </form>
+            </dialog>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
